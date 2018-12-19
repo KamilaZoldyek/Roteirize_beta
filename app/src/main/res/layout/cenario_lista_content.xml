@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cenario_item"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="59dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+
+        android:foregroundTint="@color/RcolorPrimaryDark"
+        android:src="@drawable/ic_world2"
+        android:tint="@color/RcolorPrimaryDark"
+        tools:foregroundTint="@color/RcolorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/nomeCenario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:lines="1"
+        android:text="Nome do cenário"
+        android:textSize="22sp" />
+
+
+</LinearLayout>

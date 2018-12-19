@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/personagem_novo_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:scrollbarStyle="insideInset"
+    android:scrollbars="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="49dp"
+                android:layout_height="400dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.993"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.189">
+
+                <ImageView
+                    android:id="@+id/randomName"
+                    android:layout_width="38dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:tint="@color/RcolorPrimaryDark"
+                    app:srcCompat="@drawable/ic_random" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <ImageView
+                    android:id="@+id/randomSex"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:tint="@color/RcolorPrimaryDark"
+                    app:srcCompat="@drawable/ic_random" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" />
+
+                <ImageView
+                    android:id="@+id/randomIdade"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:tint="@color/RcolorPrimaryDark"
+                    app:srcCompat="@drawable/ic_random" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+
+                <ImageView
+                    android:id="@+id/randomDataLocal"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:tint="@color/RcolorPrimaryDark"
+                    app:srcCompat="@drawable/ic_random" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
+
+                <ImageView
+                    android:id="@+id/randomCaracteristicas"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:tint="@color/RcolorPrimaryDark"
+                    app:srcCompat="@drawable/ic_random" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="276dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/campos"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nome" />
+
+                <EditText
+                    android:id="@+id/novo_personagem_nome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint=" Nome (obrigatório)"
+                    android:inputType="textCapWords|textPersonName" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Apelido" />
+
+                <EditText
+                    android:id="@+id/novo_personagem_apelido"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Apelido"
+                    android:inputType="textCapWords|textPersonName" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Gênero" />
+
+                <EditText
+                    android:id="@+id/novo_personagem_sexo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Gênero"
+                    android:inputType="textCapSentences" />
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Idade" />
+
+                <EditText
+                    android:id="@+id/novo_personagem_idade"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Idade"
+                    android:inputType="textCapSentences" />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Data/local de nascimento" />
+
+                <EditText
+                    android:id="@+id/novo_personagem_birth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:ems="10"
+                    android:hint="Data/local de nascimento"
+                    android:inputType="textCapSentences" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Descrição geral" />
+
+                <EditText
+                    android:id="@+id/novo_personagem_descip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:ems="10"
+                    android:hint="Diga um pouco sobre este personagem"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:maxLines="4"
+                    android:scrollbars="vertical"
+                    android:singleLine="false" />
+
+                <LinearLayout
+                    android:id="@+id/randomAll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:layout_editor_absoluteY="8dp">
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="38dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:tint="@color/RcolorPrimaryDark"
+                        app:srcCompat="@drawable/ic_random" />
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="237dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Gerar dados aleatórios"
+                        android:textSize="@dimen/header_h2_size" />
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_new_pers"
+        android:layout_width="64dp"
+        android:layout_height="80dp"
+        android:elevation="0dp"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:tint="@android:color/background_light"
+        app:backgroundTint="@color/RcolorPrimaryDark"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:rippleColor="@android:color/background_light"
+        app:srcCompat="@drawable/ic_save" />
+
+</android.support.constraint.ConstraintLayout>

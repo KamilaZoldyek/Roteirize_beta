@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:id="@+id/capitulo_novo_dialog_container"
+    android:padding="10dp"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="Novo Capítulo"
+        android:textSize="@dimen/header_size" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <EditText
+        android:id="@+id/capeditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:lines="2"
+        android:scrollbars="vertical"
+        android:hint="Título do seu capítulo (obrigatório)"
+        android:inputType="textCapWords|textMultiLine" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <!--<Button-->
+        <!--android:id="@+id/button"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textSize="@dimen/text_size_big"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:background="@color/RcolorPrimaryDark"-->
+        <!--android:text="Ok!" />-->
+
+
+</LinearLayout>

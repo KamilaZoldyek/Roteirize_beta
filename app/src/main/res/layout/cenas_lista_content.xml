@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cenas_item"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="63dp"
+        android:layout_height="match_parent"
+        android:tint="@color/RcolorPrimaryDark"
+        app:srcCompat="@drawable/ic_cenas" />
+
+    <LinearLayout
+        android:layout_width="311dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="10dp">
+
+        <TextView
+            android:id="@+id/tituloCenas"
+            android:layout_width="276dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:text="Título da cena"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/descricaoCenas"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:text="Preview do conteúdo"
+            android:textSize="@dimen/paragraph_size" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

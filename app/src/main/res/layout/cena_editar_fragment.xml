@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cena_editar_container"
+    android:layout_width="match_parent"
+    android:paddingTop="16dp"
+    android:layout_height="match_parent"
+
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/cena_editar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textView38"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="Título"
+                tools:layout_editor_absoluteX="315dp" />
+
+            <EditText
+                android:id="@+id/nova_cena_nome_editar"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+
+                android:ems="10"
+
+                android:hint="Título da cena (opcional)"
+                android:inputType="textCapSentences"
+                tools:layout_editor_absoluteX="38dp"
+
+                tools:layout_editor_absoluteY="207dp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="A ação"
+                tools:layout_editor_absoluteX="315dp" />
+
+            <EditText
+                android:id="@+id/nova_cena_acao_editar"
+                android:layout_width="330dp"
+                android:layout_height="67dp"
+                android:layout_marginStart="16dp"
+
+                android:layout_marginEnd="16dp"
+
+                android:ems="10"
+                android:gravity="top"
+                android:hint="O que vai acontecer nessa cena? Escreva aqui o seu planejamento."
+                android:inputType="textCapSentences|textMultiLine"
+                android:scrollbars="vertical"
+                tools:layout_editor_absoluteX="153dp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="Os personagens"
+
+                tools:layout_editor_absoluteY="472dp" />
+
+            <EditText
+                android:id="@+id/nova_cena_personagens_editar"
+                android:layout_width="@dimen/edit_text_size"
+
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+
+                android:layout_marginEnd="16dp"
+                android:ems="10"
+                android:gravity="top"
+                android:hint="Quem vai participar dessa cena? E como essas pessoas estão se sentindo? Fale sobre eles aqui."
+                android:inputType="textCapSentences|textMultiLine"
+                android:scrollbars="vertical" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="O local"
+                tools:layout_editor_absoluteX="323dp"
+                tools:layout_editor_absoluteY="368dp" />
+
+            <EditText
+                android:id="@+id/nova_cena_local_editar"
+                android:layout_width="@dimen/edit_text_size"
+
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="16dp"
+                android:ems="10"
+
+                android:gravity="top"
+                android:hint="Onde essa cena vai se passar? E o clima, como está? Fale um pouco sobre o cenário da ação."
+                android:inputType="textCapSentences|textMultiLine"
+                android:scrollbars="vertical"
+                tools:layout_editor_absoluteX="38dp"
+                tools:layout_editor_absoluteY="407dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_nova_cena_salvar_editar"
+        android:layout_width="64dp"
+        android:layout_height="80dp"
+        android:layout_gravity="bottom|end"
+        android:elevation="0dp"
+        android:layout_margin="@dimen/fab_margin"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:tint="@android:color/background_light"
+        app:backgroundTint="@color/RcolorPrimaryDark"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:rippleColor="@android:color/background_light"
+        app:srcCompat="@drawable/ic_save" />
+
+</android.support.constraint.ConstraintLayout>

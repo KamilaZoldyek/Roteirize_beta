@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/first_time_layout"
+    android:layout_width="@dimen/edit_text_size"
+    android:padding="16dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical|center_horizontal"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView48"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+
+        android:textSize="@dimen/header_size"
+        tools:padding="16dp"
+        android:text="Bem vindo!" />
+
+    <TextView
+        android:id="@+id/textView46"
+        android:layout_width="wrap_content"
+        android:paddingTop="16dp"
+        android:paddingEnd="15dp"
+        android:paddingStart="15dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:text="Note que o Roteirize não é um aplicativo para você escrever seus livros, apenas para planejá-los.
+        "
+        android:textAlignment="center"
+
+        android:textSize="@dimen/header_h3_size"
+        tools:padding="16dp" />
+
+    <TextView
+        android:id="@+id/textView49"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:paddingStart="15dp"
+        android:paddingTop="16dp"
+        android:paddingEnd="15dp"
+        android:text="Escreva aqui apenas anotações que serão úteis mais tarde, mas utilize um editor de texto como o Open Office Writer para escrever, de fato, o seu livro."
+        android:textAlignment="center"
+
+        android:textSize="@dimen/header_h3_size"
+        tools:padding="16dp" />
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/capitulo_item"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="59dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+
+        android:foregroundTint="@color/RcolorPrimaryDark"
+        android:src="@drawable/ic_chapter"
+        android:tint="@color/RcolorPrimaryDark"
+        tools:foregroundTint="@color/RcolorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/nomeCapitulo"
+        android:layout_width="226dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxLines="2"
+        android:text="Nome do capítulo"
+        android:textSize="22sp" />
+
+    <ImageView
+        android:id="@+id/capitulo_escrito"
+        android:layout_width="282dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginEnd="25dp"
+        android:layout_weight="1"
+        android:tint="@color/RcolorPrimaryDark"
+        app:srcCompat="@drawable/ic_check" />
+
+
+</LinearLayout>

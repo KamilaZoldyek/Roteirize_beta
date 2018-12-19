@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/resumoScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/resumoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/resuno_nome_projeto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nome do projeto aqui"
+            android:textSize="@dimen/header_size" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:id="@+id/resumo_descricao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Descricao do projeto aqui"
+            android:textSize="@dimen/header_h3_size" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:id="@+id/resumo_meta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Meta do projeto aqui"
+            android:textSize="@dimen/header_h3_size" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="• Personagens"
+            android:textSize="@dimen/header_h2_size" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:id="@+id/resumo_personagens"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Personagens aqui"
+            android:textSize="@dimen/header_h3_size" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="• Cenários"
+            android:textSize="@dimen/header_h2_size" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:id="@+id/resumo_cenarios"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cenários aqui"
+            android:textSize="@dimen/header_h3_size" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:id="@+id/textView35"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="• Capítulos"
+            android:textSize="@dimen/header_h2_size" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:id="@+id/resumo_cenas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Capítulos e cenas aqui"
+            android:textSize="@dimen/header_h3_size" />
+
+        <LinearLayout
+            android:id="@+id/resumo_pdf_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="top"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.937"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:tint="@color/RcolorPrimaryDark"
+                app:srcCompat="@drawable/ic_menu_share" />
+
+            <TextView
+                android:id="@+id/pdf_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:padding="8dp"
+                android:text="Salvar como PDF"
+                android:textSize="@dimen/header_h3_size" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:id="@+id/capitulo_novo_dialog_container"
+    android:padding="10dp"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="Confirmação"
+        android:textSize="@dimen/header_size" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:textSize="@dimen/header_h3_size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tem certeza que quer excluir? Essa ação não pode ser desfeita!" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <!--<Button-->
+        <!--android:id="@+id/button"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textSize="@dimen/text_size_big"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:background="@color/RcolorPrimaryDark"-->
+        <!--android:text="Ok!" />-->
+
+
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <!--<item android:title="Projetos">-->
+        <!--<menu>-->
+            <!--<item-->
+                <!--android:icon="@drawable/ic_menu_share"-->
+                <!--android:title="Projeto1" />-->
+            <!--<item-->
+                <!--android:title="Projeto2" />-->
+
+        <!--</menu>-->
+    <!--</item>-->
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/grupo1">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="Início" />
+
+        <item
+            android:id="@+id/nav_projects"
+            android:icon="@drawable/ic_projects"
+            android:title="Projetos" />
+
+        <!--<item-->
+            <!--android:id="@+id/nav_newProject"-->
+            <!--android:icon="@drawable/ic_new_project"-->
+            <!--android:title="Novo Projeto" />-->
+
+        <item
+            android:id="@+id/nav_note_list"
+            android:icon="@drawable/ic_note_list"
+            android:title="Anotações" />
+
+        <!--<item-->
+            <!--android:id="@+id/nav_new_note"-->
+            <!--android:icon="@drawable/ic_new_note"-->
+            <!--android:title="Nova anotação" />-->
+
+        <item
+            android:id="@+id/nav_alarm"
+            android:icon="@drawable/ic_alarm"
+            android:title="Lembrete" />
+        <!--<item-->
+            <!--android:id="@+id/nav_export"-->
+            <!--android:icon="@drawable/ic_menu_share"-->
+            <!--android:title="Exportar" />-->
+        <!--<item-->
+            <!--android:id="@+id/nav_mail"-->
+            <!--android:icon="@drawable/ic_mail"-->
+            <!--android:title="Fale conosco" />-->
+
+    </group>
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/grupo2">
+
+        <item
+            android:id="@+id/about"
+            android:icon="@drawable/ic_info"
+            android:title="Sobre o Roteirize" />
+
+    </group>
+
+
+
+</menu>

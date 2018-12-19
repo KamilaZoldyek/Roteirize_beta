@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+
+    <color name="RcolorPrimary">#427879</color>
+    <color name="RcolorPrimaryDark">#427879</color>
+    <color name="RcolorAccent2">#b4e7ad</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="tgray">#808080</color>
+    <color name="gray">#a7a7a7</color>
+    <color name="rtransparent">#00ffffff</color>
+    <color name="RcolorAccent">#427879</color>
+    <color name="red">#af3638</color>
+
+    FF794243
+
+
+</resources>

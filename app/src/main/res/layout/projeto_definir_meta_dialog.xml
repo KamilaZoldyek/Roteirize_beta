@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:id="@+id/meta_dialog_container"
+    android:padding="10dp"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="Nova meta"
+        android:textSize="@dimen/header_size" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <TextView
+        android:id="@+id/textView42"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tenha em mente algo realista para você não se sentir frustrado mais tarde." />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <TextView
+        android:id="@+id/textView43"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Para referência, um livro de ficção tem uma média de 60 mil palavras." />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <EditText
+        android:id="@+id/metaeditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Sua nova meta"
+        android:inputType="number" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <Spinner
+        android:id="@+id/spinner_palavras"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:entries="@array/palavras_caracteres"
+        android:textSize="18sp"></Spinner>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <!--<Button-->
+        <!--android:id="@+id/button"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textSize="@dimen/text_size_big"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:background="@color/RcolorPrimaryDark"-->
+        <!--android:text="Ok!" />-->
+
+
+</LinearLayout>
